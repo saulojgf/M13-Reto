@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+.main {
+
+    &__grid--items {
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        margin: auto;
+        top: -150px;
+    }
+
+}

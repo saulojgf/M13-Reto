@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+
+a[class*="__link"] {
+    padding: 10px;
+    // outline: 1px solid white;
+    .link__icon {
+        margin-inline: 2px;
+    }
+    cursor: pointer;
+}
+
+a[class*="__link-primary"] {
+    color: $txt_link-primary;
+
+    &:hover{
+        color: $txt_link-primaryhover;
+    }
+}

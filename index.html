@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0eb9ff2e4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>E-Commer Reto</title>
+</head>
+<body>
+    <header class="hdr">
+        <div class="hdr__upper upper d-f_space_between-center">
+            <figure class="upper__logo d-f_left-center">
+                <img class="logo" src="img/logo.webp" alt="">
+                <span>Buy Smart</span>
+            </figure>
+            <div class="upper__search search d-f_center" >
+                <button class="search__btn--blue search__btn--ktgories">Dropdown button</button>
+                <input class="search__input" type="search">
+                <button class="search__btn--orange search__btn--icon">
+                    <i class="search__icon icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="upper__links links d-f_right">
+                <a href="#" class="links__link">
+                    <i class="link__icon fa-solid fa-arrow-right-to-bracket"></i>
+                    Sing in
+                </a>
+                <a href="#" class="links__link">
+                    <i class="link__icon fa-solid fa-user-plus"></i>
+                    Sing up
+                </a>
+                <a href="#" class="links__link">
+                    <i class="link__icon fa-solid fa-cart-shopping"></i>
+                    Shopping Cart
+                </a>
+            </div>
+        </div>
+        <nav class="hdr__nav">
+            <ul class="nav__menu menu">
+                <li><a href="#"><i class="fa-solid fa-bars"></i>All</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Today´s Deals</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="banners" class="main__carousel carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/banners/2816x1000/banner_accesories.webp" class="d-block w-100" alt="banner_accesories">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/banners/2816x1000/banner_electronic.webp" class="d-block w-100" alt="banner_electronic">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/banners/2816x1000/banner_footwear.webp" class="d-block w-100" alt="banner_footwear">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/banners/2816x1000/banner_home.webp" class="d-block w-100" alt="banner_home">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#banners" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#banners" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="main__grid main__grid--items">
+            <div class="card">
+                <img class="card-img-top" src="img/products/smartphone_galaxy.webp" alt="Smartphone Galaxy X">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Smartphone Galaxy X</h5>
+                    <p class="card-text">Smartphone potente con cámara triple y 5G.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">GX-2025</li>
+                    <li class="list-group-item">$899</li>
+                    <li class="list-group-item">Electrónica</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal1">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/zapatillas_runfast.webp" alt="Zapatillas RunFast">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Zapatillas RunFast</h5>
+                    <p class="card-text">Zapatillas ligeras y transpirables para correr.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">RF-AirMax</li>
+                    <li class="list-group-item">$120</li>
+                    <li class="list-group-item">Calzado</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal2">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="/img/products/mochilaexplorer.webp" alt="Mochila Explorer">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Mochila Explorer</h5>
+                    <p class="card-text">Mochila resistente al agua con espacio para laptop.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">EXP-50L</li>
+                    <li class="list-group-item">$65</li>
+                    <li class="list-group-item">Accesorios</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal3">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/lampar_led_smart.webp" alt="Lámpara LED Smart">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Lámpara LED Smart</h5>
+                    <p class="card-text">Lámpara inteligente con control por voz.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">SmartLight-20</li>
+                    <li class="list-group-item">$45</li>
+                    <li class="list-group-item">Hogar</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal4">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/Bicicleta_MountainPro.webp" alt="Bicicleta MountainPro">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Bicicleta MountainPro</h5>
+                    <p class="card-text">Bicicleta de montaña con frenos de disco.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">MTB-XR17</li>
+                    <li class="list-group-item">$750</li>
+                    <li class="list-group-item">Deportes</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal5">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/Perfume_elegance.webp" alt="Perfume Elegance">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Perfume Elegance</h5>
+                    <p class="card-text">Fragancia floral fresca y elegante.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ELG-50F</li>
+                    <li class="list-group-item">$70</li>
+                    <li class="list-group-item">Belleza</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal6">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/camisa_oxford.webp" alt="Camisa Oxford">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Camisa Oxford</h5>
+                    <p class="card-text">Camisa clásica de algodón azul claro.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">OXF-CL25</li>
+                    <li class="list-group-item">$35</li>
+                    <li class="list-group-item">Ropa</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal7">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/tablet_tabmaster.webp" alt="Tablet TabMaster">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Tablet TabMaster</h5>
+                    <p class="card-text">Tablet profesional con lápiz digital.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">TM-105PRO</li>
+                    <li class="list-group-item">$499</li>
+                    <li class="list-group-item">Electrónica</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal8">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/juego-de-ollas.webp" alt="Juego de Ollas ChefPro">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Juego de Ollas ChefPro</h5>
+                    <p class="card-text">Juego de ollas de acero inoxidable 5 piezas.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">CP-5SET</li>
+                    <li class="list-group-item">$150</li>
+                    <li class="list-group-item">Cocina</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal9">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/products/reloj-smartfit.webp" alt="Reloj SmartFit">
+                <div class="card-body card-description">
+                    <h5 class="card-title">Reloj SmartFit</h5>
+                    <p class="card-text">Smartwatch con GPS y monitor cardíaco.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">SF-42S</li>
+                    <li class="list-group-item">$220</li>
+                    <li class="list-group-item">Tecnología</li>
+                </ul>
+                <div class="card-body card-links">
+                    <a class="card__link card__link-primary" data-bs-toggle="modal" data-bs-target="#modal10">Details</a>
+                    <a class="card__link card__link-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Modals -->
+        <!-- Producto 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal1Label">Smartphone Galaxy X</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 6.7" pantalla OLED <br>
+                        - Color: Negro <br>
+                        - Contenido: 128GB almacenamiento, 8GB RAM <br>
+                        - Tecnología: 5G, reconocimiento facial, cámara triple 108MP <br>
+                        - Batería: 4500mAh, carga rápida
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal2Label">Zapatillas RunFast</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Talla: 38-44 <br>
+                        - Color: Blanco con detalles azules <br>
+                        - Contenido: Material sintético y malla <br>
+                        - Tecnología: Suela anti-impacto, ligera y transpirable
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal3Label">Mochila Explorer</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 50x30x20cm <br>
+                        - Color: Verde militar <br>
+                        - Contenido: Compartimento para laptop, bolsillos laterales <br>
+                        - Material: Nylon resistente al agua
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal4Label">Lámpara LED Smart</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 20cm alto <br>
+                        - Color: Blanco <br>
+                        - Contenido: Luz regulable, base antideslizante <br>
+                        - Tecnología: Conexión Wi-Fi, control por app y voz
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal5Label">Bicicleta MountainPro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: Marco 17"/19" <br>
+                        - Color: Rojo y negro <br>
+                        - Contenido: Frenos de disco, suspensión delantera <br>
+                        - Tecnología: Cambio de velocidades Shimano, llantas resistentes
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal6Label">Perfume Elegance</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 50ml <br>
+                        - Contenido: Fragancia floral <br>
+                        - Color: Transparente <br>
+                        - Tecnología: Spray atomizador de alta presión
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal7Label">Camisa Oxford</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Talla: S, M, L, XL <br>
+                        - Color: Azul claro <br>
+                        - Contenido: 100% algodón <br>
+                        - Detalles: Botones de madreperla, corte clásico
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal8Label">Tablet TabMaster</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 10.5" <br>
+                        - Color: Gris espacial <br>
+                        - Contenido: 256GB almacenamiento, 6GB RAM <br>
+                        - Tecnología: Pantalla táctil, lápiz digital incluido, conectividad Wi-Fi/4G
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal9Label">Juego de Ollas ChefPro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 5 piezas (olla grande, mediana, pequeña, sartén, cacerola) <br>
+                        - Color: Negro <br>
+                        - Contenido: Acero inoxidable con tapa de vidrio <br>
+                        - Tecnología: Apto para inducción y horno
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal10Label">Reloj SmartFit</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        - Tamaño: 42mm <br>
+                        - Color: Negro <br>
+                        - Contenido: Correa de silicón <br>
+                        - Tecnología: Monitor de ritmo cardíaco, GPS, notificaciones, resistente al agua
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

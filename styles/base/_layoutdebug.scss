@@ -1,0 +1,12 @@
+.ol {
+    outline: 2px solid #000;
+    &-red {
+        outline: 2px solid #f50404;
+    }
+    &-yellow {
+        outline: 2px solid #ffff00;
+    }
+    &-blue {
+        outline: 2px solid #0000ff;
+    }
+}

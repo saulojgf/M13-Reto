@@ -1,0 +1,42 @@
+@use "../abstracts/mixins" as *;
+
+ul[class*="__menu"] {
+    @include flex($align-items: center);
+    height: 100%;
+    padding-inline: 10px;
+    list-style: none;
+    gap: 15px;
+}
+
+ul[class*="--around-xtend"] {
+    justify-content: space-around;
+}
+
+ul[class*="--btween-xtend"] {
+    justify-content: space-between;
+}
+
+ul[class*="--evenly-xtend"] {
+    justify-content: space-evenly;
+}
+
+ul[class*="--evenly-grow"] {
+    li {
+        display: inherit;
+        align-items: inherit;
+        height: 100%;
+        flex-grow: 1;
+        // outline: auto;
+    }
+    li > a {
+        display: inherit;
+        align-items: inherit;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        // outline: 2px dashed rgb(67, 180, 1);s
+    }
+    li > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

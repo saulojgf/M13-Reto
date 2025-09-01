@@ -1,0 +1,51 @@
+@use "functions";
+
+// Fundamental Colors - summer
+$orange-crayola: #ff6b35ff;
+$peach: #f7c59fff;
+$beige: #efefd0ff;
+$polynesian-blue: #004e89ff;
+$lapis-lazuli: #1a659eff;
+$onyx: #353839;
+$white: #ffffffff;
+$black: #000000ff;
+
+// ---------- Backgrounds Colors ---------------
+$hdr_upper-bgcolor: $peach;
+$hdr_nav_bgcolor: $lapis-lazuli;
+// ---------- Text Color -----------------------
+$hdr_upper-txtcolor: $lapis-lazuli;
+$hdr_nav-txtcolor: $white;
+
+// -------------------- Dimensions --------------------
+$fullscreen: 100%;
+// --------------- Header Dimesions -------------------
+// ---------- Header Containers -----------------------
+$hdr_upper-height: 60px;
+$hdr_upper_logo-width: 25%;
+$hdr_upper_logo-minwidth: 130px;
+$hdr_upper_logo-height: 80%;
+$hdr_upper_search-width: 50%;
+$hdr_upper_search-minwidth: 500px;
+$hdr_upper_links-width: 25%;
+$hdr_upper_links-minwidth: 350px;
+$hdr_upper_items-height: 60%;
+$hdr_nav-height: 50px;
+// ---------- Header items ---------------
+$search__btn--ktgories: 25%;
+$search__input: 70%;
+$search__btn--icon: functions.sqr($hdr_upper-height, $hdr_upper_items-height);
+
+// ---------- Button Colors --------------
+// ----- Background Button Colors -----
+$bg_btn-blue: $lapis-lazuli;
+$bg_btn-orange: $orange-crayola;
+// ----- Text Button Colors -----
+$txt_btn-blue: $white;
+$txt_btn-orange: $beige;
+
+// ---------- Links Colors ------------
+$txt_link-primary: $polynesian-blue;
+$txt_link-primaryhover: $lapis-lazuli;
+
+

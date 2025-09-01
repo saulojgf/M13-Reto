@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+button[class*="__btn"] {
+    padding-inline: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[class*="__btn--blue"] {
+    color: $txt_btn-blue;
+    background-color: $bg_btn-blue;
+}
+
+button[class*="__btn--orange"] {
+    color: $txt_btn-orange;
+    background-color: $bg_btn-orange;
+}
+
+// ---------- Haeder buttons ----------
+
+

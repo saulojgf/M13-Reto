@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+
+.hdr {
+    width: $fullscreen;
+
+    &__upper {
+        color: $hdr_upper-txtcolor;
+        width: $fullscreen;
+        height: $hdr_upper-height;
+        background-color: $hdr_upper_bgcolor;
+        gap: 5px;
+    }
+
+    &__nav {
+        color: $hdr_nav-txtcolor;
+        width: $fullscreen;
+        height: $hdr_nav-height;
+        background-color: $hdr_nav_bgcolor;
+    }
+
+    .upper {
+        padding-inline: 10px;
+        &__logo{
+            width: $hdr_upper_logo-width;
+            min-width: $hdr_upper_logo-minwidth;
+            height: $hdr_upper_logo-height;
+            gap: 10px;
+        }
+        &__search {
+            width: $hdr_upper_search-width;
+            min-width: $hdr_upper_search-minwidth;
+            height: $hdr_upper_items-height;
+        }
+        &__links {
+            width: $hdr_upper_links-width;
+            min-width: $hdr_upper_links-minwidth;
+            height: $hdr_upper_items-height;
+        }
+
+        .search {
+            &__btn--ktgories {
+                width: $search__btn--ktgories;
+            }
+            &__input {
+                width: $search__input;
+            }
+            &__btn--icon {
+                width: $search__btn--icon;
+            }
+        }
+    }
+
+}
